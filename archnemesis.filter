@@ -1,0 +1,111 @@
+
+# Archnemesis part filter
+
+Show # Opulent exalt sound, very rare powerful mod needed for a challenge
+	Class "Archnemesis Mod"
+    ArchnemesisMod == "Opulent"
+	SetFontSize 45
+	SetTextColor 200 0 0 255
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Pentagon
+
+Show # Endgame combines
+	Class "Archnemesis Mod"
+    ArchnemesisMod == "Kitava-touched" "Innocence-touched"
+	SetFontSize 45
+	SetTextColor 200 0 0 255
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Pentagon
+
+Show # General filter for touched parts, as you probbaly want to see them if you make them
+	Class "Archnemesis Mod"
+    ArchnemesisMod == "Solaris-touched" "Shakari-touched" "Lunaris-touched" "Arakaali-touched" "Tukohama-touched" "Brine King-touched" "Abberath-touched"
+	SetFontSize 45
+	SetTextColor 200 0 0 255
+	SetBorderColor 255 100 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect Orange
+	MinimapIcon 1 Orange Pentagon
+
+Show # Tier 3 : Good combines!
+	Class "Archnemesis Mod"
+    ArchnemesisMod == "Trickster" "Empowering Minions" "Effigy" "Crystal-Skinned" "Corpse Detonator"
+	SetFontSize 45
+	SetTextColor 255 100 0 255
+	SetBorderColor 255 100 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect Orange Temp
+	MinimapIcon 1 Orange Pentagon
+
+Show # Tier 3 : Terrible combines. Still shows, if you somehow made them. Empowered elements is a weird one, it's usually not worth the trouble.
+	Class "Archnemesis Mod"
+    ArchnemesisMod == "Temporal Bubble" "Soul Eater" "Empowered Elements"
+	SetFontSize 45
+	SetTextColor 255 100 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 0 0 0 255
+    MinimapIcon 1 Orange Pentagon
+
+Show # Tier 2 : Good combines! Invulnerable is here because it is the limiting resource in innotouched and is craft only, but is otherwise terrible.
+	Class "Archnemesis Mod"
+    ArchnemesisMod == "Treant horde" "Rejuvenating" "Necromancer" "Mirror Image" "Invulnerable" "Executioner" "Assassin"
+	SetFontSize 45
+	SetTextColor 255 100 0 255
+	SetBorderColor 255 100 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect Orange Temp
+	MinimapIcon 1 Orange Pentagon
+
+Show # Tier 3 : Bad t2 combines
+	Class "Archnemesis Mod"
+    ArchnemesisMod == "Storm Strider" "Mana Siphoner" "Magma Barrier" "Ice Prison" "Hexer" "Heralding Minions" "Frost Strider" "Flame Strider" "Evocationist" "Entangler" "Drought Bringer" "Corrupter"
+	SetFontSize 40
+	SetTextColor 255 100 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 0 0 0 255
+
+Show # Tier 1 (drop) : Worthwile drops
+	Class "Archnemesis Mod"
+    ArchnemesisMod == "Vampiric" "Toxic" "Steel-Infused" "Sentinel" "Gargantuan" "Echoist" "Soul Conduit"
+	SetFontSize 45
+	SetTextColor 255 100 0 255
+	SetBorderColor 255 100 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect Orange Temp
+	MinimapIcon 1 Orange Pentagon
+
+Show # Tier 1 (drop) : Situational drops, usually bad
+	Class "Archnemesis Mod"
+    ArchnemesisMod == "Permafrost" "Overcharged" "Juggernaut" "Deadeye" "Bombardier" "Berserker" "Arcane Buffer"
+	SetFontSize 40
+	SetTextColor 255 100 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 0 0 0 255
+
+Show # Tier 1 (drop) : Drops not worth your time, or very rarely for specific endgame recepies.
+	Class "Archnemesis Mod"
+    ArchnemesisMod == "Stormweaver" "Malediction" "Incendiary" "Hasted" "Frostweaver" "Frenzied" "Flameweaver" "Dynamo" "Consecrator" "Chaosweaver" "Bonebreaker" "Bloodletter"
+	SetFontSize 35
+	SetTextColor 255 100 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 0 0 0 255
+
+Show # Bright pink fallback, if I missed anything
+	Class "Archnemesis Mod"
+	SetFontSize 45
+	SetTextColor 255 0 200 255
+	SetBorderColor 255 0 200 255
+	SetBackgroundColor 40 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect Pink
+	MinimapIcon 1 Pink Pentagon
